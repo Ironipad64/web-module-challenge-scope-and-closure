@@ -27,11 +27,11 @@ There are layers upon layers of nested functions within the game of baseball. Yo
 
 ### Task 1 - Set Up Project and Tests
 
-1. Fork repo and add TL as collaborator on Github
-2. Clone _your_ fork (not Lambda's repo by mistake!)
-3. `cd` into your newly cloned repository
-4. Create a new branch by typing `git checkout -b <firstName-lastName>`
-5. Work on your branch, push commits and create PR as usual
+1. Fork repo and add TL as collaborator on Github!
+2. Clone _your_ fork (not Lambda's repo by mistake!)!
+3. `cd` into your newly cloned repository!
+4. Create a new branch by typing `git checkout -b <firstName-lastName>`!
+5. Work on your branch, push commits and create PR as usual!
 
 ### Task 2a - MVP code
 
@@ -42,6 +42,11 @@ Find the file `index.js` and complete the tasks.
 Edit the `ReadMe` file with your answers.
 
 1. In your own words, define closure (1-2 sentences).
+
+  closure is basiclly a function that has access to any variable outside its scope from within a function.
+  It also helps functions have private variables within its function. 
+  It even has gives a function access to the parent scope even if its already closed
+
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -63,8 +68,17 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
+
+  closure is used when the private variable (const newRoll) is only used inside the parent scope.
+
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+
+personalDice function is still the same even if u change the name, the only thing that would 
+change is the differnt names you can add, they will get differnt rolls becuase of the Math.random
+
 c. What is the lexical scope of `newRoll`? 
+
+  a variable outside the function that can accesed within a closed function. In this case name and newRoll are grabbing from outside there function
 
 ### Task 2c - Exit Ticket
 
